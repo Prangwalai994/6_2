@@ -31,7 +31,7 @@ namespace TestNinja.Mocking
         public string GetUnprocessedVideosAsCsv()
         {
             var videoIds = new List<int>();
-            var videos = new VideoRepository().GetUnprocessedVideos();
+            var videos = _repository.GetUnprocessedVideos();
 
                 foreach (var v in videos)
                     videoIds.Add(v.Id);
