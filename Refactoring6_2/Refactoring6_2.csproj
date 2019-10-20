@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mocking\FileReader.cs" />
+    <Compile Include="Mocking\IVideoRepository.cs" />
     <Compile Include="Mocking\Program.cs" />
     <Compile Include="Mocking\VideoRepository.cs" />
     <Compile Include="Mocking\VideoService.cs" />
