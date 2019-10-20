@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Refactoring6_2.Mocking;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -33,6 +34,7 @@ namespace TestNinja.Mocking
         public string GetUnprocessedVideosAsCsv()
         {
             var videoIds = new List<int>();
+            var videos = new VideoRepository().GetUnprocessedVideos();
 
                 foreach (var v in videos)
                     videoIds.Add(v.Id);
